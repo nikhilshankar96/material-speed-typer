@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title -->
+		<title>SpeedTyper2</title>
+
+		<!--  -->
+		<!--  ALL CSS FILES -->
+		<!--  -->
+
+		<!-- Font TFF-->
+		<link rel="stylesheet" href="fonts/RobotoMono-Regular.ttf" />
+
+		<!-- Materialize CSS -->
+		<link rel="stylesheet" href="material/materialize.css" />
+
+		<!-- My CSS -->
+		<link rel="stylesheet" href="App.css" />
+
+		<!--  -->
+		<!--  -->
+	</head>
+
+	<body class="darkbg">
+		<header>
+			<h1 class="neon -text" id="headerTop ">SpeedTyper2</h1>
+		</header>
+		<!-- 
+		<div id="parent">
+			<div id="floater"></div>
+			<div id="child">Content here</div>
+		</div> -->
+
+		<div
+			class="container card-panel center-block main-div z-depth-3 col s12 m10 l8 xl8 white-text darkbg"
+			style="margin: auto"
+		>
+			<!-- Difficulty -->
+			<div id="diffdiv">
+				<button
+					class="btn waves-effect waves-orange cyan disabled"
+					id="diff1"
+					onclick=" changeLevel(55)"
+				>
+					NOOB
+				</button>
+
+				<button
+					class="btn waves-effect waves-orange cyan"
+					id="diff2"
+					onclick=" changeLevel(40)"
+				>
+					MED
+				</button>
+				<button
+					class="btn waves-effect waves-orange cyan"
+					id="diff3"
+					onclick=" changeLevel(25)"
+				>
+					PRO
+				</button>
+				<button
+					class="btn waves-effect waves-orange cyan"
+					id="diff4"
+					onclick=" changeLevel(20)"
+				>
+					NINJA
+				</button>
+			</div>
+			<p style="margin: 15px">
+				Type the given word within
+				<span id="seconds">0.0</span> secs:
+			</p>
+
+			<h2 id="currentWord">--------</h2>
+			<div class="">
+				<!-- Word & Input -->
+				<div>
+					<div>
+						<input
+							type="text"
+							placeholder="Start typing..."
+							id="wordInput"
+							autofocus
+						/>
+						<!-- Time & Score Columns -->
+						<div id="score-time-container">
+							<div id="score-time-container">
+								<h3>
+									Time:
+								</h3>
+								<h3>
+									<span id="timeDisplay">0.0</span>
+								</h3>
+							</div>
+							<div id="score-time-container">
+								<h3>
+									Score:
+								</h3>
+								<h3>
+									<span id="scoreDisplay">0</span>
+								</h3>
+							</div>
+						</div>
+
+						<!-- Message -->
+						<p><span id="message"> Type!</span></p>
+
+						<!-- High Score -->
+						<h3 class="center-block center ">
+							High Score: <span id="highscoreDisplay">1</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--JavaScript at end of body for optimized loading-->
+		<!--  -->
+		<!--  ALL JS FILES -->
+		<!--  -->
+
+		<!-- Materialize JS -->
+		<script src="material/materialize.js"></script>
+
+		<!-- MY JS -->
+		<script src="App.js"></script>
+
+		<!--  -->
+		<!--  -->
+	</body>
+</html>
